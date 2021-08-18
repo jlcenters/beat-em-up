@@ -118,6 +118,14 @@ public class MovesPlayer : MonoBehaviour
 
     }
 
+    public void AlertObservers(string message)
+    {
+        if(message == "AttackEnded")
+        {
+            isAtk = false;
+        }
+    }
+
     private void Flip(float horizontal)
     {
         //if moving to the left and bool is false or if moving to the right and bool is true
